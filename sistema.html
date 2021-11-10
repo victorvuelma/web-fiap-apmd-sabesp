@@ -14,8 +14,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.8.21/locale/pt-br.js"></script>
+  <script>dayjs.locale('pt-br')</script>
+
+  <script src='assets/scripts/components.js'></script>
   <script defer src='assets/scripts/sistema.js'></script>
 </head>
 
@@ -34,65 +39,11 @@
   </header>
 
   <section class="content">
-    <div class="select">
+    <div class="head">
       <p>Selecione um dos sistema de abastecimento para visualizar mais detalhes:</p>
     </div>
 
-    <div class="systems">
-      <a class="system" href="./sistema.html?nome=ALTO TIETÊ">
-        <div class="name">
-          <h5>Alto Tietê</h5>
-        </div>
-        <div class="image">
-          <img src="./assets/images/sistemas/tiete.png" alt="Alto Tietê">
-        </div>
-      </a>
 
-      <a class="system" href="./sistema.html?nome=CANTAREIRA">
-        <div class="name">
-          <h5>Cantareira</h5>
-        </div>
-        <div class="image">
-          <img src="./assets/images/sistemas/cantareira.png" alt="Cantareira">
-        </div>
-      </a>
-
-      <a class="system" href="./sistema.html?nome=GUARAPIRANGA">
-        <div class="name">
-          <h5>Guarapiranga</h5>
-        </div>
-        <div class="image">
-          <img src="./assets/images/sistemas/guarapiranga.png" alt="Guarapiranga">
-        </div>
-      </a>
-
-      <a class="system" href="./sistema.html?nome=MARSILAC">
-        <div class="name">
-          <h5>Marsilac</h5>
-        </div>
-        <div class="image">
-          <img src="./assets/images/sistemas/marsilac.png" alt="Marsilac">
-        </div>
-      </a>
-
-      <a class="system" href="./sistema.html?nome=ORIENTAL">
-        <div class="name">
-          <h5>Oriental</h5>
-        </div>
-        <div class="image">
-          <img src="./assets/images/sistemas/oriental.png" alt="Oriental">
-        </div>
-      </a>
-
-      <a class="system" href="./sistema.html?nome=RIO CLARO">
-        <div class="name">
-          <h5>Rio Claro</h5>
-        </div>
-        <div class="image">
-          <img src="./assets/images/sistemas/rio_claro.png" alt="Rio Claro">
-        </div>
-      </a>
-    </div>
   </section>
 </body>
 

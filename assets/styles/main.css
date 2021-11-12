@@ -39,14 +39,20 @@ header h2 {
   margin-top: 24px;
   color: #FFFFFF;
   font-size: 2em;
-  max-width: 50vw;
 }
 
 header .logo img {
   width: 100%;
 }
 
-header .logo, header .nav {
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+header .logo, header nav {
   width: 96px;
   max-width: 20vw;
 }
@@ -55,8 +61,19 @@ section.content {
   margin: 64px 0;
 }
 
-section.content, header {
+section.content {
   max-width: 80vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width:1080px) {
+  header {
+    background: rgb(34,134,197);
+    background: linear-gradient(45deg, rgba(34,134,197,1) 0%, rgba(24,186,224,1) 100%);
+  }
+
+  nav {
+    display: none;
+  }
 }

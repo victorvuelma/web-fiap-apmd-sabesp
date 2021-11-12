@@ -1,5 +1,6 @@
 .head {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background: #F5F5F5;
   border-radius: 16px;
@@ -11,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 4px;
 }
 
 .head img {
@@ -26,11 +28,12 @@
 .month .title {
   display: flex;
   align-items: center;
-  height: 96px;
+  min-height: 96px;
   padding: 32px;
   border-radius: 16px;
   background: #92D2E4;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 
 .month .title .close, .month .title .open {
@@ -67,6 +70,7 @@
 .month .title p {
   font-weight: bold;
   color: #474747;
+  margin: 0 4px;
 }
 
 .month .name, .head .name {
@@ -86,7 +90,12 @@
 
 .measures .row {
   display: flex;
+  flex-wrap: wrap;
   padding: 24px 56px 24px 32px;
+}
+
+.measures .row * {
+  margin: 0 4px;
 }
 
 .measures .row h5, .measures .row p {

@@ -15,6 +15,7 @@ function MonthTitle(params) {
   title.classList.add("title");
 
   const name = document.createElement("h4");
+  name.classList.add("name");
   name.innerText = dayjs(params.data).format("MMMM");
   title.appendChild(name);
 
@@ -48,6 +49,7 @@ function MeasuresRow(params, type, label) {
   row.classList.add("row");
 
   const labelElement = document.createElement("h5");
+  labelElement.classList.add("name");
   labelElement.innerText = label;
   row.appendChild(labelElement);
 

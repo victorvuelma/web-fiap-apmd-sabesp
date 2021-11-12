@@ -9,6 +9,7 @@
 
   <link rel='stylesheet' type='text/css' media='screen' href='assets/styles/main.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='assets/styles/sistema.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/styles/tooltip.css'>
 
   <link rel="icon" href="./assets/favicon.ico">
 
@@ -27,7 +28,9 @@
 <body>
   <header>
     <div class="logo">
-      <img src="./assets/images/sabesp.svg" alt="Logo Sabesp">
+      <a href="index.html">
+        <img src="./assets/images/sabesp.svg" alt="Logo Sabesp">
+      </a>
     </div>
 
     <div class="title">
@@ -40,7 +43,49 @@
 
   <section class="content">
     <div class="head">
-      <p>Selecione um dos sistema de abastecimento para visualizar mais detalhes:</p>
+      <p class="name">Mês</p>
+      <p class="tooltip">
+        Turbidez <img src="./assets/images/info.svg" alt="Info">
+        <span class="tooltiptext">
+          Padrão: <br />
+          Máximo 5 N.T.U.<br />
+          Característica que reflete o grau de transparência da água
+        </span>
+      </p>
+      <p class="tooltip">
+        Cor Aparente <img src="./assets/images/info.svg" alt="Info">
+        <span class="tooltiptext">
+          Padrão: <br />
+          Máximo 15 U.C.<br />
+          Característica que mede o grau de coloração da água
+        </span>
+      </p>
+      <p class="tooltip">
+        Cloro <img src="./assets/images/info.svg" alt="Info">
+        <span class="tooltiptext">
+          Padrão: <br />
+          Mínimo 0,2 mg/L.<br />
+          Máximo 5,0 mg/L.<br />
+          Indica a quantidade de cloro, na rede de distribuição, adicionado
+          no processo de desinfecção da água
+        </span>
+      </p>
+      <p class="tooltip">
+        Coliforme Total <img src="./assets/images/info.svg" alt="Info">
+        <span class="tooltiptext">
+          Padrão: <br />
+          Ausência em 95% das amostras <br />
+          Indica presença de bactérias que não são necessariamente prejudiciais à saúde
+        </span>
+      </p>
+      <p class="tooltip">
+        E. Coli <img src="./assets/images/info.svg" alt="Info">
+        <span class="tooltiptext">
+          Padrão: <br />
+          Ausência em 100% das amostras<br />
+          Indica a possibilidade de presença de organismos causadores de doenças
+        </span>
+      </p>
     </div>
 
 

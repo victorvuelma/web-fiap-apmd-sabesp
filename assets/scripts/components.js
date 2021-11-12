@@ -30,6 +30,16 @@ function MonthTitle(params) {
     title.appendChild(percent);
   });
 
+  const open = document.createElement("img");
+  open.classList.add("open");
+  open.src = "./assets/images/plus.svg";
+  title.appendChild(open);
+
+  const close = document.createElement("img");
+  close.classList.add("close");
+  close.src = "./assets/images/minus.svg";
+  title.appendChild(close);
+
   return title;
 }
 
